@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.admin-activity-form_text {
+		@apply outline-none bg-transparent h-[50px] rounded-[14px] border border-white/20 text-white/80 font-medium text-lg px-[10px] focus:border-app-1;
+	}
+
+	.admin-activity-form_textarea {
+		@apply outline-none bg-transparent  rounded-[14px] border border-white/20 text-white/80 font-medium text-lg p-[10px] focus:border-app-1;
+	}
+
+	.user-profile_input {
+		@apply h-[50px] outline-none rounded-[12px] bg-transparent ring-1 ring-offset-1 px-[10px] border;
+	}
+
+	.custom-btn {
+		@apply !text-white !text-base md:!text-xl !rounded-[16px] !bg-app-2 hover:!bg-app-3  w-[80%] lg:w-max  lg:!h-[60px] px-10;
+	}
+}
