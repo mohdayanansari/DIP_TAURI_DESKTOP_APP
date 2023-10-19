@@ -95,7 +95,7 @@ const DirectorSidebar = () => {
 			setIsLoading(false);
 		}
 		setUserImg(img);
-		console.log(userImg);
+		// console.log(userImg);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [userImg]);
 

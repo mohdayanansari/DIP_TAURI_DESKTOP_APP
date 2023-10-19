@@ -52,7 +52,7 @@ const LoginForm = () => {
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log(state);
+		// console.log(state);
 		setIsLoading(true);
 		if (canSave) {
 			login(state.email, state.password);

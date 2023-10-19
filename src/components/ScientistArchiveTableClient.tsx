@@ -61,7 +61,7 @@ const ScientistArchiveTableClient = () => {
 
 	const selectedRow = async (rowId: string) => {
 		handleOpen();
-		console.log(rowId);
+		// console.log(rowId);
 
 		const filterRowData = await userData.find(
 			(item) => item.customID === rowId
@@ -76,7 +76,7 @@ const ScientistArchiveTableClient = () => {
 				[selectedFileId]: true,
 			}));
 			const token = localStorage.getItem('token');
-			console.log('Selected File ID --> ', selectedFileId);
+			// console.log('Selected File ID --> ', selectedFileId);
 			try {
 				const res = await axiosClient.get(
 					`/rdm-form/file/${selectedFileId}`,
@@ -138,7 +138,7 @@ const ScientistArchiveTableClient = () => {
 			});
 			if (res.data.success) {
 				setUserData(res.data.user.rdmForm); // Assuming user data is present in the 'data' property
-				console.log(res.data);
+				// console.log(res.data);
 				setIsLoading(false);
 			}
 		} catch (error: any) {

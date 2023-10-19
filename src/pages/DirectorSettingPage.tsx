@@ -83,7 +83,7 @@ const DirectorSettingPage = () => {
 				await localStorage.setItem('userId', res.data.user._id);
 
 				setIsLoading(false);
-				console.log(currUser);
+				// console.log(currUser);
 			}
 		} catch (error: any) {
 			if (error.response?.data?.message === 'Invalid AT') {

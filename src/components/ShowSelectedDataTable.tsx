@@ -60,7 +60,7 @@ const ShowSelectedDataTable = ({ userData }: { userData: any[] }) => {
 
 	const selectedRow = async (rowId: string) => {
 		handleOpen();
-		console.log(rowId);
+		// console.log(rowId);
 
 		const filterRowData = await userData.find(
 			(item) => item.customID === rowId
@@ -75,7 +75,7 @@ const ShowSelectedDataTable = ({ userData }: { userData: any[] }) => {
 				[selectedFileId]: true,
 			}));
 			const token = localStorage.getItem('token');
-			console.log('Selected File ID --> ', selectedFileId);
+			// console.log('Selected File ID --> ', selectedFileId);
 			try {
 				const res = await axiosClient.get(
 					`/rdm-form/file/${selectedFileId}`,

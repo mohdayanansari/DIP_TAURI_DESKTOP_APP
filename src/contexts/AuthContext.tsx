@@ -121,13 +121,13 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 				// send to routes
 				if (response.data?.roles.includes('director')) {
 					navigate('/director');
-					console.log('go director');
+					// console.log('go director');
 				} else if (response.data?.roles.includes('hod')) {
 					navigate('/hod');
-					console.log('go hod');
+					// console.log('go hod');
 				} else {
 					navigate('/scientist');
-					console.log('go scientist');
+					// console.log('go scientist');
 				}
 			} else {
 				// Handle authentication failure

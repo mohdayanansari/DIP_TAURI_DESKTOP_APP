@@ -186,8 +186,8 @@ const RDMForm = () => {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setIsLoading(true);
-		console.log(state);
-		console.log(selectedFiles);
+		// console.log(state);
+		// console.log(selectedFiles);
 		if (!state.dataProvidedBy) {
 			toast.error(`Please provide data provided by "email" or "cd"`, {
 				position: 'bottom-right',

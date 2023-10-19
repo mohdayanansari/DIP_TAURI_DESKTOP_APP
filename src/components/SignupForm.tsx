@@ -62,10 +62,10 @@ const SignupForm = () => {
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log(state);
+		// console.log(state);
 		setIsLoading(true);
 		const roles = Array.from(state.roles);
-		console.log(roles);
+		// console.log(roles);
 		try {
 			if (canSave) {
 				// do stuff
